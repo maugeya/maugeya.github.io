@@ -2,7 +2,7 @@
 layout: project
 title: DevBook
 subtitle: Group project at General Assembly
-image: http://i.imgur.com/L0dCzSE.png
+images: http://i.imgur.com/L0dCzSE.png
 heroku: https://developerbook.herokuapp.com/
 ---
 

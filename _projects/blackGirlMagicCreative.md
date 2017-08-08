@@ -2,7 +2,7 @@
 layout: project
 title: BlackGirlMagicCreative
 subtitle: My second project at General Assembly
-image: http://i.imgur.com/fqIeE1r.png
+image: https://i.imgur.com/fqIeE1r.png
 heroku: https://ancient-dusk-97846.herokuapp.com/
 ---
 

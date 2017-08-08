@@ -2,7 +2,7 @@
 layout: project
 title: Guess Ru?
 subtitle: My first project at General Assembly
-image: http://i.imgur.com/bKe0xV4.png
+images: http://i.imgur.com/bKe0xV4.png
 heroku: https://sheltered-reef-48200.herokuapp.com/
 ---
 

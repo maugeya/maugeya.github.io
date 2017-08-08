@@ -2,7 +2,7 @@
 layout: project
 title: Spotlight
 subtitle: My final project at General Assembly
-image: http://i.imgur.com/uKXYqeQ.png
+images: http://i.imgur.com/uKXYqeQ.png
 heroku: https://intense-shelf-36393.herokuapp.com/
 ---
 
