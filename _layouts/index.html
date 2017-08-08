@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<div class="mainPage">
+
+
+  <section id="home">
+    <h1>all about me bit</h1>
+  </section>
+  <section id="about">
+    <h1>About section</h1>
+  </section>
+  <section id="projects">
+    <ul>
+      {% for project in site.projects %}
+      <li>
+        <div class="parallax-container">
+          <div class="parallax"><img src="{{ project.image }}" alt=""></div>
+        </div>
+        <div class="section white">
+          <div class="row container">
+            <h2 class="header"><a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a></h2>
+            <h5>{{ project.subtitle }}</h5>
+            <p>{{ project.excerpt }}</p>
+
+          </div>
+        </div>
+
+
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  <section id="contact">
+    <h4>My contact information</h4>
+
+  </section>
+
+</div>
