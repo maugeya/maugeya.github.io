@@ -7,6 +7,10 @@ layout: default
 
   <section id="home">
     <h1>all about me bit</h1>
+    <div class="nextSection">
+      <a href="#about" class="pulse"><i class="large material-icons downArrow">arrow_downward</i></a>
+    </div>
+
   </section>
   <section id="about">
     <h1>About section</h1>
@@ -18,11 +22,11 @@ layout: default
         <div class="parallax-container">
           <div class="parallax"><img src="{{ project.image }}" alt=""></div>
         </div>
-        <div class="section white">
+        <div class="section">
           <div class="row container">
-            <h2 class="header"><a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a></h2>
+            <h2 class="header">{{ project.title }}</h2>
             <h5>{{ project.subtitle }}</h5>
-            <p>{{ project.excerpt }}</p>
+            <p>{{ project.excerpt }}<a href="{{ project.url | prepend: site.baseurl }}">Read more...</a></p>
 
           </div>
         </div>

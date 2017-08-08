@@ -254,7 +254,8 @@ div {
 nav {
   display: none;
   transition: display 0.4s ease;
-  background-color: white;
+  background-color: black;
+  box-shadow: 0 0 0 0;
   &.translucent {
     display: block;
     opacity: 0.5;
@@ -265,7 +266,13 @@ nav {
         li {
           a {
             &.nav-links {
-                color: #F3C712;
+                color: #D99A01;
+                text-transform: uppercase;
+                letter-spacing: 1.2px;
+                font-family: 'Lato', sans-serif;
+                &:hover {
+                  text-decoration: none;
+                }
             }
           }
         }
@@ -273,6 +280,31 @@ nav {
     }
   }
 
+}
+
+
+main {
+  h1, h2, h3, h4, h5 {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1.1px;
+    color: #D99A01;
+  }
+  p {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+  }
+}
+
+//dropdown in nav
+
+ul {
+  #dropdown1 {
+    li {
+      a {
+        color:#66023E;
+      }
+    }
+  }
 }
 
 #about {
@@ -285,10 +317,45 @@ nav {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
+  div {
+    &.nextSection {
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      a {
+        i {
+          &.downArrow {
+            color: #D99A01;
+            animation:pulse 1s ease-out;
+            animation-iteration-count: infinite;
+
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.1, 0.1);
+    opacity: 0.0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2, 1.2);
+    opacity: 0; 
+  }
 }
 
 #contact {
   height: 100vh;
+  background-color: #f7f2f2
 }
 
 //parallax style
@@ -303,4 +370,8 @@ div {
       }
     }
   }
+}
+
+body {
+  background-color: black;
 }
