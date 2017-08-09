@@ -18,5 +18,18 @@ $(() => {
     }
   }
 
+  $('.nav-links').on('click', scrollToSection);
+
+  function scrollToSection() {
+    const section = $(this).attr('href');
+    $('html, body').animate({
+      scrollTop: $(section).offset().top - 40
+    }, 1000);
+  }
+
   
+
+
+
+
 });

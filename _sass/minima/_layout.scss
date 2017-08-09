@@ -262,13 +262,20 @@ nav {
   }
   div {
     &.nav-wrapper {
+      a {
+        &.brand-logo {
+          img {
+            height: 40px;
+          }
+        }
+      }
       ul {
         li {
           a {
             &.nav-links {
                 color: #D99A01;
                 text-transform: uppercase;
-                letter-spacing: 1.2px;
+                letter-spacing: 1.3px;
                 font-family: 'Lato', sans-serif;
                 &:hover {
                   text-decoration: none;
@@ -289,9 +296,12 @@ main {
     letter-spacing: 1.1px;
     color: #D99A01;
   }
-  p {
+  p, a {
     font-family: 'Raleway', sans-serif;
     color: white;
+    font-size: 18px;
+    line-height: 170%;
+    letter-spacing: 1.1px;
   }
 }
 
@@ -313,11 +323,25 @@ ul {
 
 #home {
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://i.imgur.com/CNI5ms7.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('https://i.imgur.com/CNI5ms7.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  div {
+    &.mainTitle {
+      position:absolute;
+      text-align: center;
+      text-transform: uppercase;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      h1, h2 {
+        color: white;
+        letter-spacing: 1.3px;
+      }
+    }
+  }
   div {
     &.nextSection {
       position: absolute;
@@ -328,8 +352,10 @@ ul {
         i {
           &.downArrow {
             color: #D99A01;
-            animation:pulse 1s ease-out;
-            animation-iteration-count: infinite;
+            &:hover {
+              animation: pulse 1s ease-out;
+              animation-iteration-count: infinite;
+            }
 
           }
         }
@@ -338,6 +364,8 @@ ul {
   }
 
 }
+
+
 
 @keyframes pulse {
   0% {
@@ -349,7 +377,7 @@ ul {
   }
   100% {
     transform: scale(1.2, 1.2);
-    opacity: 0; 
+    opacity: 0;
   }
 }
 
@@ -366,6 +394,7 @@ div {
       &#projects {
         ul {
           margin-left: 0;
+
         }
       }
     }
