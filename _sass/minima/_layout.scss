@@ -296,12 +296,17 @@ main {
     letter-spacing: 1.1px;
     color: #D99A01;
   }
-  p, a {
+  p {
     font-family: 'Raleway', sans-serif;
     color: white;
     font-size: 18px;
     line-height: 170%;
     letter-spacing: 1.1px;
+  }
+  a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+
   }
 }
 
@@ -383,7 +388,9 @@ ul {
 
 #contact {
   height: 100vh;
-  background-color: #f7f2f2
+  background-color: #f7f2f2;
+
+
 }
 
 //parallax style
@@ -409,4 +416,82 @@ article {
   &.project {
     text-align: center;
   }
+}
+
+
+#state {
+  margin:auto;
+  display:block;
+  height:100px;
+  position:relative;
+}
+
+
+//contact section
+
+section {
+  #contact {
+    div {
+      &.email-link {
+        a {
+          color: red;
+        }
+      }
+    }
+  }
+}
+div {
+  &.gps_ring {
+      border: 2px solid black;
+      -webkit-border-radius: 50%;
+      height: 18px;
+      width: 18px;
+      display:inline;
+      position: absolute;
+      // left:-20px;
+      // top:214px;
+      -webkit-animation: pulsate 1s ease-out;
+      -webkit-animation-iteration-count: infinite;
+      opacity: 0.0;
+
+
+  }
+}
+
+
+
+.gps_ring:before {
+    content:"";
+    display:inline;
+    border: 2px solid black;
+    -webkit-border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left:-8px;
+    top:-8px;
+    -webkit-animation: pulsate 1s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 0.1s;
+    opacity: 0.0;
+}
+.gps_ring:after {
+    content:"";
+    display:inline;
+    border:2px solid black;
+    -webkit-border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left:-18px;
+    top:-18px;
+    -webkit-animation: pulsate 1s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 0.2s;
+    opacity: 0.0;
+}
+@-webkit-keyframes pulsate {
+    0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
+    50% {opacity: 1.0;}
+    100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
 }
