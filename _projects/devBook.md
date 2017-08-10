@@ -4,6 +4,7 @@ title: DevBook
 subtitle: A directory for web developers to showcase their work.
 image: https://i.imgur.com/L0dCzSE.png
 heroku: https://developerbook.herokuapp.com/
+tech: HTML5, SCSS, AngularJS, Bootstrap, Satellizer, Angular UI Select, Angular Messages, Angular resource, Angular UI Router, JWT, Chai, Mocha, yarn, Bower, Gulp, AWS-SDK
 ---
 [GitHub Repo](https://github.com/n2kp/wdi27-group-project)
 

@@ -4,6 +4,7 @@ title: BlackGirlMagicCreative
 subtitle: Celebrating women doing excellent things!
 image: https://i.imgur.com/fqIeE1r.png
 heroku: https://ancient-dusk-97846.herokuapp.com/
+tech: Gulp, HTML5, SCSS, Bootstrap, Express, Express ejs Layouts, Mongoose, Morgan, Multer, Request-Primse, bluebird, Body-Parser, AWS-SDK, Express-Flash, Express-Session, Method-Override, Goose Youtube API
 ---
 
 My second project was a fully RESTful app. I used Express and Express Layouts, to create an app that tied in with a recent twitter hashtag #BlackGirlMagic, that was created to give praise to women of colour who have achieved amazing things across business, media and history.

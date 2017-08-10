@@ -308,6 +308,7 @@ main {
     font-size: 20px;
 
   }
+
 }
 
 //dropdown in nav
@@ -389,7 +390,8 @@ ul {
 #contact {
   height: 100vh;
   background-color: #f7f2f2;
-
+  padding-top: 60px;
+  text-align: center
 
 }
 
@@ -429,31 +431,20 @@ article {
 
 //contact section
 
-section {
-  #contact {
-    div {
-      &.email-link {
-        a {
-          color: red;
-        }
-      }
-    }
-  }
-}
+
 div {
   &.gps_ring {
-      border: 2px solid black;
+      border: 2px solid #66023E;
       -webkit-border-radius: 50%;
       height: 18px;
       width: 18px;
       display:inline;
       position: absolute;
-      // left:-20px;
-      // top:214px;
+      left: 250px;
+      top: 10px;
       -webkit-animation: pulsate 1s ease-out;
       -webkit-animation-iteration-count: infinite;
       opacity: 0.0;
-
 
   }
 }
@@ -463,7 +454,7 @@ div {
 .gps_ring:before {
     content:"";
     display:inline;
-    border: 2px solid black;
+    border: 2px solid #66023E;
     -webkit-border-radius: 50%;
     height: 30px;
     width: 30px;
@@ -478,7 +469,7 @@ div {
 .gps_ring:after {
     content:"";
     display:inline;
-    border:2px solid black;
+    border:2px solid #66023E;
     -webkit-border-radius: 50%;
     height: 50px;
     width: 50px;
