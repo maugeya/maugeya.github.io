@@ -1,17 +1,21 @@
 ---
 layout: project
 title: DevBook
-subtitle: Group project at General Assembly
+subtitle: A directory for web developers to showcase their work.
 image: https://i.imgur.com/L0dCzSE.png
 heroku: https://developerbook.herokuapp.com/
 ---
+[GitHub Repo](https://github.com/n2kp/wdi27-group-project)
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fermentum sed neque ut tincidunt. Suspendisse potenti. Integer sed finibus nulla. Curabitur lacinia quam interdum semper suscipit. Nullam rutrum ac orci quis finibus. Phasellus vel ipsum nisl. In gravida eleifend dolor tristique gravida. Curabitur mattis augue felis, at sagittis orci dictum sed. Nullam auctor, felis non consectetur volutpat, orci massa auctor leo, eu aliquam ligula tellus eu sapien. Aenean a hendrerit orci. Phasellus a molestie massa, at egestas nibh. Vestibulum consectetur maximus sem eu eleifend. Fusce eget risus sit amet purus dictum posuere. Sed bibendum odio nec ipsum commodo, sit amet consequat erat faucibus. Quisque a neque et felis suscipit lacinia interdum non enim.
+This was the group project of the course. We decided to create an app that acted as  a directory for developers to put up short examples of their work. We wanted a site that made it easy to be able to see projects and portfolio of other developers and then contact them about their work.
 
-Nullam tempus, tortor eu egestas sodales, nisl turpis cursus ipsum, ac gravida elit erat ut purus. Proin gravida at nibh ut scelerisque. Praesent ultricies sodales ligula sit amet finibus. Mauris tincidunt finibus ante, porta gravida tellus lacinia ac. Curabitur vitae turpis orci. Nulla facilisi. Phasellus scelerisque odio eget mattis sollicitudin. Nulla facilisi. In vel convallis arcu, quis sollicitudin urna. Maecenas sit amet pulvinar diam.
+![Alt Image Text](http://i.imgur.com/wD0PWbW.png "Project page")
 
-Nullam eget sollicitudin metus, sit amet pulvinar est. Praesent auctor, nisl at fringilla ornare, mauris leo vehicula mi, ac ultricies leo tortor vitae ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed sit amet est eros. Vivamus nulla massa, congue vel erat eget, consectetur lacinia sem. Cras aliquet nisl non luctus pellentesque. Etiam libero enim, posuere sit amet nunc a, blandit convallis ante. Pellentesque tincidunt libero pretium nulla venenatis molestie et eu metus. Etiam in ultrices tortor, mattis molestie enim. Integer vulputate sagittis nisi, et finibus neque varius nec. Ut vel diam magna. Nulla feugiat quam ac ipsum lacinia fermentum. Ut et ex nec elit viverra iaculis.
+We implemented a number of features such as users being able to 'like' projects, and being able to filter through projects that had been uploaded by projects.!
+Using Trello to organise our team, we gave each other tasks and had our own group stand-up every morning to organise the work ahead. We also integrated the use of Google Maps, NewsApi and EventBrite APIs, to help create an online hub for developers to be able to be a 'One Stop' place for information.
 
-Nullam rutrum ullamcorper magna, bibendum placerat sem fermentum ac. Cras fermentum efficitur semper. Donec massa dolor, pretium sed magna et, pharetra gravida tellus. Praesent massa turpis, pulvinar in sollicitudin ac, pretium eget nisi. Sed nibh mi, consectetur a neque et, vulputate fringilla elit. Curabitur semper justo ac lacus vestibulum dapibus. Aenean scelerisque, justo at vestibulum molestie, quam mauris viverra nisi, egestas cursus lorem metus sit amet elit. Suspendisse et sodales velit. Nam dictum auctor purus, a egestas dolor egestas vitae.
+![Alt Image Text](http://i.imgur.com/e2JhHhL.png "External APIs")
 
-Praesent porta sem sit amet arcu condimentum auctor. Curabitur gravida nisl velit, sollicitudin hendrerit ligula egestas non. Aenean ut justo at odio mollis vestibulum. Cras ante neque, tristique facilisis tincidunt ut, eleifend eget tellus. Sed condimentum orci nisl, nec dignissim mauris dignissim in. Morbi ut laoreet elit, non euismod arcu. Curabitur tincidunt, massa at porta sollicitudin, nunc sapien mattis magna, mattis pretium turpis ipsum vitae velit. Nam vel arcu mattis, ultricies libero ut, euismod nulla.
+Also as a part of the project, we worked on creating and implementing tests to our backend using Mocha and Chai. Creating user stories, really helped in the planning of the work ahead and organise where we needed to direct most of our attention to get the task done in the time provided.
+
+I spent the beginning of the project setting up our back end API. I created the controllers, models and secure routes and tested on Insomnia to make sure it was all working correctly. I worked on the progress bar for the user’s profiles, using documentation from UI Bootstrap and creating a virtual in the user model to dynamically change the bar depending on how much of the profile was full. I was also able to work with Angular UI Select2 to give the ability to tag technologies in an easy way on projects and profiles.
