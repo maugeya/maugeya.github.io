@@ -17,47 +17,187 @@ layout: default
 
   </section>
   <section id="about">
-    <h1>Angela Maugey</h1>
-  </section>
-  <section id="projects">
-    <ul>
-      {% for project in site.projects %}
-      <li>
-        <div class="parallax-container">
-          <div class="parallax"><img src="{{ project.image }}" alt=""></div>
-        </div>
-        <div class="section">
-          <div class="row container">
-            <h4 class="header">{{ project.title }}</h4>
-            <h5>{{ project.subtitle }}</h5>
-            <p>{{ project.excerpt }}<a href="{{ project.url | prepend: site.baseurl }}">Read more...</a></p>
-
+    <div class="row">
+      <h1>About Me</h1>
+      <div class="col s6 offset-s3" id="description">
+        <p>I’ve always been interested in computers but found myself in a career as a chef for eight years, before taking the decision to become a web developer. My interest started as a hobby, as I’m from a household where others use coding. I found that my interest was slowly taking over my spare time and after doing an online course. I worked hard to teach myself and was able to get a scholarship from General Assembly to join their Web Development Immersive course and got the coding bug! I’ve realised that many of the skills and ethics about work that I gained from previous jobs, have been transferable to web development.</p>
+      </div>
+    </div>
+    <div class="row tech-row">
+      <div class="col s6 offset-4" id="tech">
+        <h3>Tech Used</h3>
+        <div class="tech col s5 offset-s1">
+          <div class="icon">
+            <i class="icon-html5"></i>
+          </div>
+          <div class="icon-name">
+            <p>HTLM5</p>
           </div>
         </div>
-
-
-      </li>
-      {% endfor %}
-    </ul>
-  </section>
-  <section id="contact">
-    <div class="container">
-      <div class="contact-box">
-        <div class="contact-header">
-          <h3>Contact me!</h3>
-        </div>
-        <div id="state" class="grid_4 alpha">
-
-          <div class="gps_ring"></div>
-          <div class="email-link">
-            <a style="color: #D99A01; font-size: 30px; padding-left: 35px;" id="email" href="mailto:info@angelamaugey.com?Subject=Hello!">email me</a>
+        <div class="tech col s5 offset-s1">
+          <div class="icon">
+            <i class="icon-css3"></i>
+          </div>
+          <div class="icon-name">
+            <p>CSS3</p>
           </div>
         </div>
+        <div class="tech col s5 offset-s1">
+          <div class="icon">
+            <i class="icon-sass"></i>
+          </div>
+          <div class="icon-name">
+            <p>SASS/SCSS</p>
+          </div>
+        </div>
+        <div class="tech col s5 offset-s1">
+          <div class="icon">
+            <i class="icon-javascript"></i>
+          </div>
+          <div class="icon-name">
+            <p>JavaScript</p>
+          </div>
+        </div>
+        <div class="tech col s5 offset-s1">
+          <div class="icon">
+            <i class="icon-jquery"></i>
+          </div>
+          <div class="icon-name">
+            <p>jQuery</p>
+          </div>
+        </div>
+        <div class="tech col s5 offset-s1">
+          <div class="icon">
+            <i class="icon-nodejs"></i>
+          </div>
+          <div class="icon-name">
+            <p>Node.js</p>
+          </div>
+        </div>
+        <div class="tech col s5 offset-s1">
+          <div class="icon">
+            <i class="icon-mongodb"></i>
+          </div>
+          <div class="icon-name">
+            <p>Mongodb</p>
+          </div>
+        </div>
+        <div class="tech col s5 offset-s1">
+          <div class="icon">
+            <i class="icon-postgres"></i>
+          </div>
+          <div class="icon-name">
+            <p>PostgresQL</p>
+          </div>
+        </div>
+        <div class="tech col s5 offset-s1">
+          <div class="icon">
+            <i class="icon-gulp"></i>
+          </div>
+          <div class="icon-name">
+            <p>Gulp</p>
+          </div>
+        </div>
+        <div class="tech col s5 offset-s1">
+          <div class="icon">
+            <i class="icon-ruby"></i>
+          </div>
+          <div class="icon-name">
+            <p>Ruby</p>
+          </div>
+        </div>
+        <div class="tech col s5 offset-s1">
+          <div class="icon">
+            <i class="icon-angular"></i>
+          </div>
+          <div class="icon-name">
+            <p>AngularJS</p>
+          </div>
+        </div>
+        <div class="tech col s5 offset-s1">
+          <div class="icon">
+            <i class="icon-ruby-on-rails"></i>
+          </div>
+          <div class="icon-name">
+            <p>Ruby on Rails</p>
+          </div>
+        </div>
+        <div class="tech col s5 offset-s1">
+          <div class="icon">
+            <i class="icon-npm"></i>
+          </div>
+          <div class="icon-name">
+            <p>NPM</p>
+          </div>
+        </div>
+        <div class="tech col s5 offset-s1">
+          <div class="icon">
+            <i class="icon-bootstrap"></i>
+          </div>
+          <div class="icon-name">
+            <p>Bootstrap</p>
+          </div>
+        </div>
+        <div class="tech col s5 offset-s1">
+          <div class="icon">
+            <i class="icon-aws"></i>
+          </div>
+          <div class="icon-name">
+            <p>AWS</p>
+          </div>
+        </div>
+        <div class="tech col s5 offset-s1">
+          <div class="icon">
+            <i class="icon-heroku"></i>
+          </div>
+          <div class="icon-name">
+            <p>Heroku</p>
+          </div>
+        </div>
+    </div>
+  </div>
 
+</section>
+<section id="projects">
+  <ul>
+    {% for project in site.projects %}
+    <li>
+      <div class="parallax-container">
+        <div class="parallax"><img src="{{ project.image }}" alt=""></div>
+      </div>
+      <div class="section">
+        <div class="row container">
+          <h4 class="header">{{ project.title }}</h4>
+          <h5>{{ project.subtitle }}</h5>
+          <p>{{ project.excerpt }}<a href="{{ project.url | prepend: site.baseurl }}">Read more...</a></p>
+
+        </div>
+      </div>
+
+
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+<section id="contact">
+  <div class="container">
+    <div class="contact-box">
+      <div class="contact-header">
+        <h3>Contact me!</h3>
+      </div>
+      <div id="state" class="grid_4 alpha">
+
+        <div class="gps_ring"></div>
+        <div class="email-link">
+          <a style="color: #D99A01; font-size: 30px; padding-left: 35px;" id="email" href="mailto:info@angelamaugey.com?Subject=Hello!">email me</a>
+        </div>
       </div>
 
     </div>
 
-  </section>
+  </div>
+
+</section>
+
 
 </div>

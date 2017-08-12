@@ -325,7 +325,77 @@ ul {
 
 #about {
   min-height: 100vh;
+  padding-top: 100px;
+  text-align: center;
+  margin: 0 auto;
+    h1 {
+    text-align: center;
+    }
+    div {
+      &#description {
+        padding: 15px;
+        border: 1px solid white;
+        border-radius: 10px;
+        text-align: justify;
+
+    }
+  }
+  div {
+    &#tech {
+      color: #D99A01;
+      font-size: 50px;
+      display: inline-block;
+      float: left;
+      text-align: center;
+      margin: 30px auto;
+      // margin-left: 320px;
+      border: 1px solid #D99A01;
+      border-radius: 10px;
+      div {
+        &.tech-row {
+          text-align: center;
+          margin: 0 auto;
+        }
+      }
+      div {
+        &.tech {
+          &:hover {
+            animation: grow 2s ease;
+          }
+        }
+      }
+
+      }
+      div {
+        &.icon-name {
+          display: inline;
+          p {
+            color: #66023E;
+          }
+
+        }
+        div {
+          &.icon {
+            display: inline;
+          }
+        }
+      }
+
+    }
+  }
+
+@keyframes grow {
+  0% {
+    transform: scale(1.0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1.0);
+  }
 }
+
 
 #home {
   height: 100vh;
@@ -359,7 +429,7 @@ ul {
           &.downArrow {
             color: #D99A01;
             &:hover {
-              animation: pulse 1s ease-out;
+              animation: pulsate 1s ease-out;
               animation-iteration-count: infinite;
             }
 
@@ -371,21 +441,6 @@ ul {
 
 }
 
-
-
-@keyframes pulse {
-  0% {
-    transform: scale(0, 0);
-    opacity: 0.5;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1.2, 1.2);
-    opacity: 0;
-  }
-}
 
 #contact {
   height: 100vh;
