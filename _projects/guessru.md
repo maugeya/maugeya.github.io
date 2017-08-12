@@ -12,10 +12,10 @@ As the first project I did at General Assembly was pretty daunting, I focused my
 
 Using HTML5, CSS3 and jQuery to produce a game. To play the game, the user has to press a button to remove tiles that hid a picture behind. The user has to guess who is in the picture behind the tiles, the score is decreasing every time a tile is taken.
 
-![Alt Image Text](http://i.imgur.com/MlSNECT.png "Project page")
+![Game image](http://i.imgur.com/MlSNECT.png "Main game")
 
 The user can move through the rounds before answering questions in a bonus round to gain more points.
 
-![Alt Image Text](http://i.imgur.com/gPOUqab.png "Project page")
+![Bonus round](http://i.imgur.com/gPOUqab.png "Bonus round")
 
 The game used click events using jQuery and returning user input that are then assessed by functions that will determine what will happen next.

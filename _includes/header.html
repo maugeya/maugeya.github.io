@@ -30,7 +30,7 @@
     #{% endif %}#
   </div> -->
   <ul id="dropdown1" class="dropdown-content">
-    <li><a href="#projects">All Projects</a></li>
+    <li><a href="{{site.baseurl}}/#projects">All Projects</a></li>
     {% for project in site.projects %}
       <li><a href="{{ project.url | prepend: site.baseurl }}" class="dropdown-links">{{ project.title }}</a></li>
     {% endfor %}
@@ -38,11 +38,11 @@
   <div class="navbar-fixed">
     <nav>
       <div class="nav-wrapper">
-        <a href="#home" class="brand-logo"><img src="http://i.imgur.com/SCK2sTG.png" alt=""></a>
+        <a href="{{site.baseurl}}/#home" class="brand-logo"><img src="http://i.imgur.com/SCK2sTG.png" alt=""></a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="#about" class="nav-links">About</a></li>
+          <li><a href="{{site.baseurl}}/#about" class="nav-links">About</a></li>
           <li><a class="dropdown-button nav-links" href="#!" data-activates="dropdown1">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
-          <li><a href="#contact" class="nav-links">Contact</a></li>
+          <li><a href="{{site.baseurl}}/#contact" class="nav-links">Contact</a></li>
         </ul>
       </div>
     </nav>
