@@ -576,8 +576,9 @@ article {
   background-color: #66023E;
   margin-left: 20px;
   &:hover {
-    animation: grow 1s ease-in;
-    animation-iteration-count: infinite;
+    animation: growSmall 1s;
+    animation-fill-mode: forwards;
+
   }
 }
 
@@ -585,16 +586,30 @@ article {
   background-color: #66023E;
   margin-left: 20px;
   &:hover {
-    animation: grow 1s ease-in;
-    animation-iteration-count: infinite;
+    animation: growSmall 1s;
+    animation-fill-mode: forwards;
+
   }
 }
 
 #read-btn {
   background-color: #66023E;
   &:hover {
-    animation: grow 1s ease-in;
-    animation-iteration-count: infinite;
+    animation: growSmall 1s;
+    animation-fill-mode: forwards;
+
+  }
+}
+
+@keyframes growSmall {
+  0% {
+    transform: scale(1.0);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1.08);
   }
 }
 
