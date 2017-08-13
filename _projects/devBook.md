@@ -5,6 +5,7 @@ subtitle: A directory for web developers to showcase their work.
 image: https://i.imgur.com/L0dCzSE.png
 heroku: https://developerbook.herokuapp.com/
 tech: HTML5, SCSS, AngularJS, Bootstrap, Satellizer, Angular UI Select, Angular Messages, Angular resource, Angular UI Router, JWT, Chai, Mocha, yarn, Bower, Gulp, AWS-SDK
+github: https://github.com/n2kp/wdi27-group-project
 ---
 
 This was the group project of the course. We decided to create an app that acted as  a directory for developers to put up short examples of their work. We wanted a site that made it easy to be able to see projects and portfolio of other developers and then contact them about their work.

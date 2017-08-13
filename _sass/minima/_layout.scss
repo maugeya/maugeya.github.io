@@ -433,11 +433,6 @@ ul {
         i {
           &.downArrow {
             color: #D99A01;
-            &:hover {
-              animation: pulsate 1s ease-out;
-              animation-iteration-count: infinite;
-            }
-
           }
         }
       }
@@ -459,7 +454,8 @@ ul {
           div {
             &.contact-box {
               padding-top: 30px;
-              border: 1px solid red;
+              border: 1px solid #66023E;
+              border-radius: 10px;
             }
           }
         }
@@ -477,12 +473,11 @@ div {
       &#projects {
         ul {
           margin-left: 0;
-
+            }
+          }
         }
       }
     }
-  }
-}
 
 body {
   background-color: black;
@@ -559,4 +554,55 @@ div {
     0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
     50% {opacity: 1.0;}
     100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
+}
+
+// project page styling
+
+article {
+  &.project {
+    div {
+      &.container {
+        div {
+          &.buttons {
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+#code-btn {
+  background-color: #66023E;
+  margin-left: 20px;
+  &:hover {
+    animation: grow 1s ease-in;
+    animation-iteration-count: infinite;
+  }
+}
+
+#heroku-btn {
+  background-color: #66023E;
+  margin-left: 20px;
+  &:hover {
+    animation: grow 1s ease-in;
+    animation-iteration-count: infinite;
+  }
+}
+
+#read-btn {
+  background-color: #66023E;
+  &:hover {
+    animation: grow 1s ease-in;
+    animation-iteration-count: infinite;
+  }
+}
+
+#arrowDown {
+  color: #D99A01;
+  &:hover {
+    animation: pulse 1s;
+    animation-iteration-count: infinite;
+
+  }
 }

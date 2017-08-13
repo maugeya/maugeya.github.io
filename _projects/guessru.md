@@ -5,6 +5,7 @@ subtitle: A for drag queen fans, created using JavaScript.
 image: https://i.imgur.com/bKe0xV4.png
 heroku: https://sheltered-reef-48200.herokuapp.com/
 tech: Gulp, GitHub, NPM, JavaScript, jQuery, HTML5, SCSS, Babel
+github: https://github.com/maugeya/project-0
 ---
 
 

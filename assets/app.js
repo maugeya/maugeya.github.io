@@ -22,4 +22,14 @@ $(() => {
     }
   });
 
+  $('a').on('click', scrollToSection);
+
+  function scrollToSection () {
+    const section = $(this).attr('href');
+    $('body', 'html').animate({
+      scrollTop: $(section).offset().top - 50
+    }, 2000);
+  }
+
+
 });

@@ -5,6 +5,8 @@ subtitle: Social awareness forum, with tagging and notifications for users.
 image: https://i.imgur.com/uKXYqeQ.png
 heroku: https://intense-shelf-36393.herokuapp.com/
 tech: AngularJS, Bulma, Ruby on Rails 5, Angular Messages, Angular UI Router, Satellizer, Angular Sanitizer, Checklist Model
+github: https://github.com/maugeya/Project-4-api
+github_front: https://github.com/maugeya/Project-4-frontend
 ---
 
 Social awareness is really important to me. I wanted to create a forum that users could use to share information about what issues are important to them. I grouped up with two others to create Spotlight.
