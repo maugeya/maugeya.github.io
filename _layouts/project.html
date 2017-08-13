@@ -10,8 +10,8 @@ layout: default
 
   <div class="container">
     <div class="buttons">
-      <a class="code-btn btn"><i class="material-icons left">code</i>See the code!</a>
-      <a class="heroku-btn btn"><i class="material-icons left">desktop_mac</i>Launch the app!</a>
+      <a class="btn" id="code-btn" href="{{ page.github }}" target="blank"><i class="material-icons left">code</i>See the code!</a>
+      <a class="btn" id="heroku-btn" href="{{ page.heroku }}" target="blank"><i class="material-icons left">desktop_mac</i>Launch the app!</a>
     </div>
 
     <h4>{{page.subtitle}}</h4>
@@ -19,7 +19,7 @@ layout: default
     {{content}}
 
     <div class="project-tech">
-      <h5 style="display: inline">Tech Used</h5><p>{{ page.tech }}</p>
+      <h4 style="display: inline">Tech Used</h4><p>{{ page.tech }}</p>
     </div>
 
 
