@@ -318,6 +318,7 @@ ul {
     li {
       a {
         color:#66023E;
+        word-wrap:break-word;
       }
     }
   }
@@ -370,6 +371,7 @@ ul {
           display: inline;
           p {
             color: #66023E;
+            font-weight: bold;
           }
 
         }
@@ -445,7 +447,21 @@ ul {
   height: 100vh;
   background-color: #f7f2f2;
   padding-top: 60px;
-  text-align: center
+  text-align: center;
+  div {
+    &.container {
+      div {
+        &.contact-details {
+          div {
+            &.contact-box {
+              padding-top: 30px;
+              border: 1px solid red;
+            }
+          }
+        }
+      }
+    }
+  }
 
 }
 
@@ -494,7 +510,7 @@ div {
       width: 18px;
       display:inline;
       position: absolute;
-      left: 250px;
+      left: 340px;
       top: 10px;
       -webkit-animation: pulsate 1s ease-out;
       -webkit-animation-iteration-count: infinite;
