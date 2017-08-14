@@ -23,13 +23,13 @@ $(() => {
   });
 
   $('a').on('click', scrollToSection);
-  $('a .nav-links').on('click', scrollToSection);
+  // $('nav a').on('click', scrollToSection);
 
   function scrollToSection () {
     const section = $(this).attr('href');
     $('body', 'html').animate({
       scrollTop: $(section).offset().top
-    }, 800);
+    }, 1500);
   }
 
 

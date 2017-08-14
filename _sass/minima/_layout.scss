@@ -445,7 +445,7 @@ ul {
 #contact {
   height: 100vh;
   background-color: #f7f2f2;
-  padding-top: 60px;
+  padding-top: 70px;
   text-align: center;
   div {
     &.container {
@@ -456,6 +456,37 @@ ul {
               padding-top: 30px;
               border: 1px solid #66023E;
               border-radius: 10px;
+              div {
+                &.contact-linkBox {
+                  padding-bottom: 20px;
+                  margin-bottom: 30px;
+                  div {
+                    &.contact-links {
+                      display: inline;
+                      margin: 30px;
+                      i {
+                        font-size: 60px;
+                        color: #66023E;
+                        &:hover {
+                          color: #D99A01;
+                        }
+                      }
+                      a {
+                        &.github {
+                          color:black;
+                          font-style:normal;
+                        }
+                        &.linkedIn {
+                          color:black;
+                          font-style:normal;
+                        }
+
+                      }
+                    }
+                  }
+                }
+              }
+
             }
           }
         }
@@ -463,6 +494,13 @@ ul {
     }
   }
 
+}
+
+a {
+  &#email {
+    color: #D99A01;
+    font-size: 30px;
+  }
 }
 
 //parallax style
@@ -555,6 +593,8 @@ div {
     50% {opacity: 1.0;}
     100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
 }
+
+
 
 // project page styling
 

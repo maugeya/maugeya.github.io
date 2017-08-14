@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+  {% include header.html %}
 
 <div class="mainPage">
 
@@ -169,63 +170,72 @@ layout: default
             <p>GitHub</p>
           </div>
         </div>
-    </div>
-  </div>
-
-</section>
-<section id="projects">
-  <ul>
-    {% for project in site.projects %}
-    <li>
-      <div class="parallax-container">
-        <div class="parallax"><img src="{{ project.image }}" alt=""></div>
       </div>
-      <div class="section">
-        <div class="row container">
-          <h4 class="header">{{ project.title }}</h4>
-          <h5>{{ project.subtitle }}</h5>
-          <p>{{ project.excerpt }}</p>
-          <div class="buttons">
+    </div>
 
-            <a class="btn" id="read-btn" href="{{ project.url | prepend: site.baseurl }}"><i class="material-icons left">add</i>Read more</a>
-            <a class="btn" id="code-btn" href="{{ project.github }}" target="blank"><i class="material-icons left">code</i>See the code</a>
-            <a class="btn" id="heroku-btn" href="{{ project.heroku }}" target="blank"><i class="material-icons left">desktop_mac</i>Launch the app</a>
+  </section>
+  <section id="projects">
+    <ul>
+      {% for project in site.projects %}
+      <li>
+        <div class="parallax-container">
+          <div class="parallax"><img src="{{ project.image }}" alt=""></div>
+        </div>
+        <div class="section">
+          <div class="row container">
+            <h4 class="header">{{ project.title }}</h4>
+            <h5>{{ project.subtitle }}</h5>
+            <p>{{ project.excerpt }}</p>
+            <div class="buttons">
+
+              <a class="btn" id="read-btn" href="{{ project.url | prepend: site.baseurl }}"><i class="material-icons left">add</i>Read more</a>
+              <a class="btn" id="code-btn" href="{{ project.github }}" target="blank"><i class="material-icons left">code</i>See the code</a>
+              <a class="btn" id="heroku-btn" href="{{ project.heroku }}" target="blank"><i class="material-icons left">desktop_mac</i>Launch the app</a>
+            </div>
+
+          </div>
+        </div>
+
+
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  <section id="contact">
+    <div class="container">
+      <div class="contact-details">
+        <div class="contact-header">
+          <h3>Contact me</h3>
+        </div>
+        <div class="contact-box">
+          <div id="state" class="grid_4 alpha">
+
+            <div class="gps_ring"></div>
+            <div class="email-link">
+              <a id="email" href="mailto:info@angelamaugey.com?Subject=Hello!">Email me</a>
+            </div>
+          </div>
+          <div class="contact-linkBox">
+            <div class="contact-links">
+              <a class="linkedIn" href="https://www.linkedin.com/in/angela-maugey/" target="blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i>LinkedIn</a>
+            </div>
+            <div class="contact-links">
+              <a class="twitter-follow-button" data-show-count="false" href="hhtps://twitter.com/intent/tweet?screen_name=AngelaMogli" data-size="large">Tweet to @AngelaMogli</a>
+            </div>
+            <div class="contact-links">
+              <a class="github" href="https://github.com/maugeya" target="blank"><i class="fa fa-github" aria-hidden="true"></i>Github</a>
+            </div>
           </div>
 
         </div>
+
+
+
       </div>
-
-
-    </li>
-    {% endfor %}
-  </ul>
-</section>
-<section id="contact">
-  <div class="container">
-    <div class="contact-details">
-      <div class="contact-header">
-        <h3>Contact me!</h3>
-      </div>
-      <div class="contact-box">
-        <div id="state" class="grid_4 alpha">
-
-          <div class="gps_ring"></div>
-          <div class="email-link">
-            <a style="color: #D99A01; font-size: 30px; padding-left: 35px;" id="email" href="mailto:info@angelamaugey.com?Subject=Hello!">email me</a>
-          </div>
-        </div>
-        <h4><a href="https://www.linkedin.com/in/angela-maugey/" target="blank">LinkedIn</a></h4>
-          <a class="twitter-follow-button" data-show-count="false" href="hhtps://twitter.com/intent/tweet?screen_name=AngelaMogli">Tweet to @AngelaMogli</a>
-          <i class="icon-git"><a href="https://github.com/maugeya" target="blank">GitHub repo</a></i>
-      </div>
-
-
 
     </div>
 
-  </div>
-
-</section>
+  </section>
 
 
 </div>
