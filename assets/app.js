@@ -23,7 +23,7 @@ $(() => {
   });
 
   $('a').on('click', scrollToSection);
-  // $('nav a').on('click', scrollToSection);
+
 
   function scrollToSection () {
     const section = $(this).attr('href');
