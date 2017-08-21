@@ -347,7 +347,7 @@ ul {
   }
   div {
     &#tech {
-      color: #D99A01;
+      // color: #D99A01;
       font-size: 50px;
       display: inline-block;
       float: left;
@@ -355,6 +355,35 @@ ul {
       margin-left: 25%;
       border: 1px solid #D99A01;
       border-radius: 10px;
+      div {
+        &.tech {
+          div {
+
+            &.iconRed {
+              color: crimson;
+            }
+            &.iconOrange {
+              color: chocolate;
+            }
+            &.iconYellow {
+              color: #D99A01;
+            }
+            &.iconGreen {
+              color: green;
+            }
+            &.iconBlue {
+              color: dodgerblue;
+            }
+            &.iconIndigo {
+              color: indigo;
+            }
+            &.iconViolet {
+              color: violet;
+            }
+          }
+        }
+      }
+
       div {
         &.tech-row {
           text-align: center;
@@ -374,7 +403,7 @@ ul {
         &.icon-name {
           display: inline;
           p {
-            color: #66023E;
+            color: white;
             font-weight: bold;
           }
 
@@ -456,14 +485,14 @@ ul {
               padding-top: 30px;
               border: 1px solid #66023E;
               border-radius: 10px;
+              background-color: darken(#F7F2F2, 5%);
               div {
                 &.contact-linkBox {
                   padding-bottom: 20px;
-                  margin-bottom: 30px;
                   div {
                     &.contact-links {
                       display: inline;
-                      margin: 30px;
+                      margin-left: 30px;
                       i {
                         font-size: 60px;
                         color: #66023E;
@@ -593,6 +622,8 @@ div {
     50% {opacity: 1.0;}
     100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
 }
+
+
 
 
 
