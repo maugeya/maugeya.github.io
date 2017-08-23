@@ -29,7 +29,7 @@ $(() => {
     const section = $(this).attr('href');
     $('body', 'html').animate({
       scrollTop: $(section).offset().top
-    }, 1500);
+    }, 1300);
   }
 
 
